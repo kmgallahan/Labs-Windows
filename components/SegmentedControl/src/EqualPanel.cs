@@ -25,8 +25,6 @@ public partial class EqualPanel : Panel
         typeof(EqualPanel),
         new PropertyMetadata(default(double), OnSpacingChanged));
 
-
-
     public EqualPanel()
     {
         RegisterPropertyChangedCallback(Panel.HorizontalAlignmentProperty, OnHorizontalAlignmentChanged);
@@ -60,7 +58,6 @@ public partial class EqualPanel : Panel
 
     protected override Size ArrangeOverride(Size finalSize)
     {
-        System.Diagnostics.Debug.WriteLine("ArrangeOverride - " + HorizontalAlignment);
         var x = 0.0;
         foreach (var child in Children)
         {
