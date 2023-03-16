@@ -150,12 +150,6 @@ jobs:
           name: build-logs
           path: ./**/*.*log
 
-      - name: Artifact - ILC Repro
-        uses: actions/upload-artifact@v3
-        with:
-          name: ilc-repro
-          path: ./*.zip
-
   wasm-linux:
     runs-on: ubuntu-latest
     env:
