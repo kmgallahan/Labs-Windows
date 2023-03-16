@@ -152,7 +152,6 @@ jobs:
 
       - name: Artifact - ILC Repro
         uses: actions/upload-artifact@v3
-        if: ${{ always() }}
         with:
           name: ilc-repro
           path: ./*.zip
