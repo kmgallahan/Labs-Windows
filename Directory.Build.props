@@ -14,6 +14,7 @@
   <Import Project="Windows.Toolkit.Common.props" />
 
   <PropertyGroup>
+    <NetNativeReproPath>$(MSBuildThisFileDirectory)</NetNativeReproPath>
     <DebugType>Embedded</DebugType>
     <PackageOutputPath>bin\Package</PackageOutputPath>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
